@@ -1,0 +1,54 @@
+body {
+    background: linear-gradient(180deg, red, orange, yellow, white) no-repeat;
+}
+
+header h1 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+}
+
+#days {
+    text-align: center;
+}
+
+h2 {
+    font-family: fantasy;
+    clear: both;
+    display: inline-block;
+    width: 5em;
+    padding: 30px 10px;
+    margin: 2px;
+    text-align: center;
+    border: solid 4px white;
+    border-radius: 10px;
+}
+
+#dateSelector1, #dateSelector2 {
+    text-align: center;
+    cursor: pointer;
+    padding: 7px;
+    margin: 40px;
+}
+
+#first, #second {
+    margin-bottom: -30px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+footer {
+    margin-top: 70px;
+    text-align: center;
+    clear: both;
+}
+
+
+
