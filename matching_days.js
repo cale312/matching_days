@@ -36,9 +36,10 @@ function FirstDateInput() {
         } else if (Days.style.backgroundColor != 'red') {
             //make the background blank/clear
             Days.style.backgroundColor = 'rgba(0,0,0,0.0)';
-        } else if (day1 === day2) {
-            Days.style.backgroundColor = 'green';
         }
+    }
+    if (day1 === day2) {
+        allDays.style.backgroundColor = 'green';
     }
 }
 
@@ -66,9 +67,10 @@ function SecondDateInput() {
             allDays.style.backgroundColor = 'red';
         } else if (allDays.style.backgroundColor != 'blue') {
             allDays.style.backgroundColor = 'rgba(0,0,0,0.0)';
-        } else if (day1 === day2) {
-            allDays.style.backgroundColor = 'green';
         }
+    }
+    if (day1 === day2) {
+        Days.style.backgroundColor = 'green';
     }
 }
 
