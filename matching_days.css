@@ -1,9 +1,9 @@
 body {
-    background: linear-gradient(-20.8deg,#333, indigo, purple, orange, white) no-repeat;
+    background: linear-gradient(189deg, red, orange, yellow, white) no-repeat;
 }
 
 header h1 {
-    background: rgba(0, 0, 255, 0.2);
+    background: ;
     box-shadow: 0px 0px 15px;
     text-decoration: underline;
     text-transform: uppercase;
@@ -28,7 +28,7 @@ th {
     text-align: center;
     border: solid 4px #777;
     border-radius: 10px;
-    box-shadow: 0px 0px 100px;
+    box-shadow: 0px 0px 10px;
 }
 
 #dateSelector1, #dateSelector2 {
