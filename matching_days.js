@@ -16,8 +16,11 @@ function FirstDateInput() {
         //stored the looped list
         Days = Weekdays[i];
         day1 = firstDate.getDay();
+        if (day1 === day2 && Days.style.backgroundColor === 'red') {
+            Days.style.backgroundColor = 'green';
+        }
         //if the looped list starts with the letter(s) Su and the input items day number is 0(Sunday)
-        if (Days.textContent.startsWith('Su') && day1 === 0) {
+        else if (Days.textContent.startsWith('Su') && day1 === 0) {
             //change the background color of that element to blue
             Days.style.backgroundColor = 'blue';
         } else if (Days.textContent.startsWith('M') && day1 === 1) {
@@ -38,9 +41,6 @@ function FirstDateInput() {
             Days.style.backgroundColor = 'rgba(0,0,0,0.0)';
         }
     }
-    if (day1 === day2) {
-        allDays.style.backgroundColor = 'green';
-    }
 }
 
 //if the second date input is changed, this function is triggered
@@ -51,7 +51,9 @@ function SecondDateInput() {
     for (var i = 0; i < Weekdays.length; i++) {
         allDays = Weekdays[i];
         day2 = secondDate.getDay();
-        if (allDays.textContent.startsWith('Su') && day2 === 0) {
+        if (day1 === day2 && allDays.style.backgroundColor === 'blue') {
+            allDays.style.backgroundColor = 'green';
+        } else if (allDays.textContent.startsWith('Su') && day2 === 0) {
             allDays.style.backgroundColor = 'red';
         } else if (allDays.textContent.startsWith('M') && day2 === 1) {
             allDays.style.backgroundColor = 'red';
@@ -68,9 +70,6 @@ function SecondDateInput() {
         } else if (allDays.style.backgroundColor != 'blue') {
             allDays.style.backgroundColor = 'rgba(0,0,0,0.0)';
         }
-    }
-    if (day1 === day2) {
-        Days.style.backgroundColor = 'green';
     }
 }
 
