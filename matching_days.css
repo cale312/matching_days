@@ -1,10 +1,10 @@
 body {
-    background: linear-gradient(189deg, red, orange, yellow, white) no-repeat;
+    background: linear-gradient(189deg, white, yellow, white) no-repeat;
 }
 
 header h1 {
-    background: ;
     box-shadow: 0px 0px 15px;
+    text-shadow: 0px -2px 5px;
     text-decoration: underline;
     text-transform: uppercase;
     font-size: 40px;
@@ -24,7 +24,7 @@ th {
     display: inline-block;
     width: 5em;
     padding: 30px 10px;
-    margin: 2px;
+    margin: 5px;
     text-align: center;
     border: solid 4px #777;
     border-radius: 10px;
@@ -37,14 +37,15 @@ th {
     padding: 7px;
     margin: 40px;
     box-shadow: 0px 4px 7px;
+    font-family: impact;
 }
 
 #dateSelector1 {
-    background: rgba(0, 0, 255, 0.5);
+    background: rgba(0, 0, 255, 0.8);
 }
 
 #dateSelector2 {
-    background: rgba(255, 0, 0, 0.5);
+    background: rgba(255, 0, 0, 0.8);
 }
 
 #first, #second {
@@ -56,6 +57,7 @@ footer {
     font-family: cursive;
     text-align: center;
     clear: both;
+    box-shadow: 0px -5px 10px;
 }
 
 #logo {
