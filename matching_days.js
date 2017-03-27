@@ -16,6 +16,7 @@ function FirstDateInput() {
         //stored the looped list
         Days = Weekdays[i];
         day1 = firstDate.getDay();
+        //if the day inputs lie on the same day of the week and that days background color is red, make that days background color green
         if (day1 === day2 && Days.style.backgroundColor === 'red') {
             Days.style.backgroundColor = 'green';
         }
@@ -35,8 +36,9 @@ function FirstDateInput() {
             Days.style.backgroundColor = 'blue';
         } else if (Days.textContent.startsWith('Sa') && day1 === 6) {
             Days.style.backgroundColor = 'blue';
-            //if the background color of any day element in the list is not red
-        } else if (Days.style.backgroundColor != 'red') {
+        }
+        //if the background color of any day element in the list is not red
+        else if (Days.style.backgroundColor != 'red') {
             //make the background blank/clear
             Days.style.backgroundColor = 'rgba(0,0,0,0.0)';
         }
@@ -51,9 +53,11 @@ function SecondDateInput() {
     for (var i = 0; i < Weekdays.length; i++) {
         allDays = Weekdays[i];
         day2 = secondDate.getDay();
+        //if the day inputs lie on the same day of the week and that days background color is blue, make that days background color green
         if (day1 === day2 && allDays.style.backgroundColor === 'blue') {
             allDays.style.backgroundColor = 'green';
-        } else if (allDays.textContent.startsWith('Su') && day2 === 0) {
+        }
+        else if (allDays.textContent.startsWith('Su') && day2 === 0) {
             allDays.style.backgroundColor = 'red';
         } else if (allDays.textContent.startsWith('M') && day2 === 1) {
             allDays.style.backgroundColor = 'red';
