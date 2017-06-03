@@ -1,42 +1,53 @@
-<!Doctype HTML>
+<!DOCTYPE html>
 <html>
-    
-    <head>
-        <link href="matching_days.css" type="text/css" rel="stylesheet">
-        <title>Matching Days</title>
-    </head>
-    
-    <body>
-        
-        <header>
-            <h1>Matching Days</h1>
-        </header>
-        <div id="days">
-            <h2 class="day" id="sun">Sunday</h2>
-            <h2 class="day" id="mon">Monday</h2>
-            <h2 class="day" id="tue">Tuesday</h2>
-            <h2 class="day" id="wed">Wednesday</h2>
-            <h2 class="day" id="thur">Thursday</h2>
-            <h2 class="day" id="fri">Friday</h2>
-            <h2 class="day" id="sat">Saturday</h2>
-            <br/>
-            <h3 id="first">First Date:</h3>
-            <input type="date" id="dateSelector1" onchange="FirstDateInput()">
-            <h3 id="second">Second Date</h3>
-            <input type="date" id="dateSelector2" onchange="SecondDateInput()">
-        </div>
-        
-        
-    </body>
-    
-    <script src="matching_days.js"></script>
-    
-    <footer>&copy; codeX 2017<br/>site By: Zikisa Cale Sogaxa</footer>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Matching Days</title>
+  <header>
+    <h1>Matching Days</h1>
+  </header>
+</head>
+
+<body>
+  <br>
+  <div class="table-wrapper">
+    <table align="center">
+      <tr>
+        <td value="sun" id="Sunday">Sunday</td>
+        <td value="mon" id="Monday">Monday</td>
+        <td value="tue" id="Tuesday">Tuesday</td>
+        <td value="wed" id="Wednesday">Wednesday</td>
+        <td value="thur" id="Thursday">Thursday</td>
+        <td value="fri" id="Friday">Friday</td>
+        <td value="sat" id="Saturday">Saturday</td>
+      </tr>
+    </table>
+  </div>
+  <br>
+  <br>
+  <div class="date-wrapper">
+    <input type="date" name="date" class="dateOpt1" onchange="myFunction()">
+    <hr>
+    <input type="date" name="date" class="dateOpt2" onchange="myFunction()">
+  </div>
+  <hr>
+  <br>
+</body>
+
+<div class="footer">
+  <div class="list-inline">
+    <a href="https://www.instagram.com/sogaxa_zikisa/" class="btn-social btn-outline" target="_blank"><img src="img/instagram.png" alt=""></a>
+    <a href="https://www.facebook.com/sogaxacale" class="btn-social btn-outline" target="_blank"><img src="img/facebook.png" alt=""></a>
+    <a href="https://www.linkedin.com/in/zikisacalesogaxa" class="btn-social btn-outline" target="_blank"><img src="img/Linkedin.png" alt=""></a>
+    <a href="https://www.github.com/cale312" class="btn-social btn-outline" target="_blank"><img src="img/github.png" alt=""></a>
+  </div>
+  <h4>site By: Zikisa Cale Sogaxa</h4>
+</div>
+
+<script src="scripts/getAllDays.js"></script>
+<script src="scripts/getCurDay.js"></script>
+<script src="scripts/app.js"></script>
+
 </html>
-
-
-
-
-
-
-
