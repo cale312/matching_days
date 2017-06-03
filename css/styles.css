@@ -1,0 +1,11 @@
+body{text-align: center;margin: 0px; background: ghostwhite;}
+header{background: cyan; margin: 0px; padding: 1px; font-family: sans-serif; font-size: 3em; color: ghostwhite; letter-spacing: .2em; margin: 0px; box-shadow: 0px 0px 5px black;}
+td{display: inline-block; border-left: solid 3px; border-bottom: solid 3px; padding: 10px 90px; font-size: 2em; font-weight: bolder; margin: 2px;}
+hr{width: 100px;}
+.dateOpt1{background: blue; border-top: none; padding: 2px 10px; box-shadow: 0px 0px 5px black; color: ghostwhite; font-family: sans-serif; font-weight: bolder; cursor: pointer;}
+.dateOpt2{background: red; border-top: none; padding: 2px 10px; box-shadow: 0px 0px 5px black; color: ghostwhite; font-family: sans-serif; font-weight: bolder; cursor: pointer;}
+.blue{background: blue;}
+.red{background: red;}
+.green{background: green;}
+.footer img{width: 50; height: 50px; list-style: none;}
+h4{float: left; font-family: monospace; color: skyblue; margin-left: 5px; color: black;}
